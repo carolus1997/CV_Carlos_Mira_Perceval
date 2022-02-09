@@ -98,6 +98,11 @@ img{
     border-radius: 10%;
 
 }
+.form-floating{
+    width: 700px;
+    height: 800px;
+
+}
 .fila {
     display: flex;
     flex-direction: row;
