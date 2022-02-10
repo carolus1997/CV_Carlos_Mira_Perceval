@@ -1,38 +1,144 @@
 body {
-    background: url(images/fantasy\ world_web_movil.jpg) no-repeat center center fixed;
+    /* background: url(images/fantasy\ world_web_movil.jpg) no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background: #0A122A no-repeat center center fixed;
 
 }
 
 
 h1 {
-    font-size: 40px;
+    /* font-size: 40px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     align-items: center;
-    margin: 50px 150px 50px 190px;
+    margin: 50px 150px 50px 190px; */
+}
+.tuclase {
+    text-align: center; 
+    font-family: Arial; 
+    font-size: 50px; 
+    COLOR: #1278BF; 
+    text-shadow: 0px 0px 9px #508AD3;
+    font-weight: bold;
+    /* margin: 50px 150px 50px 190px; */
+    margin: 50px 0px 50px 0px;
 }
 
 h2 {
-    font-size: 20px;
-    color: blanchedalmond;
+    font-size: 30px;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    text-align: center;
+    margin: 10px 0px 50px 0px;
+}
+p{
+    font-size: 14px;
+    display: flex;
     align-items: center;
-    margin: 8px 200px 50px 200px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    color: aliceblue;
 }
 
-/* .inicio {
-    background-image: url("./images/fantasy\ world_web_movil.jpg");
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+/* CARROUSEL */
 
+.d-block.w-100{
+    margin: 50px 50px 50px 50px;
+}
+
+
+
+/* BOTONES */
+
+nav ul {
+    list-style-type: none;
+    margin-left: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+nav ul li {
+    --c: white;
+    color: var(--c);
+    font-size: 14px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+/* .Contacto{
+    width: 700px;
+    height: 300px;
+    border: 3px solid white;
+    display: flex;
+    align-items:center ;
+    margin-left: 150px;
+    margin-top: 50px;
 } */
+
+/* Bloques de contenidos */
 svg{
     color: aliceblue ;
     display: flex;
@@ -41,30 +147,11 @@ svg{
     margin-top: 80px;
     margin-right: 80px;
 }
-p{
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-right: 80px;
-    color: aliceblue;
-}
-img{
-    width: 80px;
-    height: 80px;
-    margin: 80px 80px 0px 30px;
-}
 
-.btn-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    font-size: large;
-    margin-bottom: 50px;
-}
+.bloquesTematicos{
+    margin-left: 50px;
 
+}
 .cuadrado {
     width: 300px;
     height: 300px;
@@ -76,33 +163,6 @@ img{
     color: black;
     border: none;
 }
-.RRSS{
-    width: 900px;
-    height: 300px;
-    border: 3px solid white;
-    display: flex;
-    align-items:center ;
-    margin-left: 50px;
-    margin-top: 100px;
-    border-radius: 10%;
-
-}
-.Contacto{
-    width: 700px;
-    height: 300px;
-    border: 3px solid white;
-    display: flex;
-    align-items:center ;
-    margin-left: 150px;
-    margin-top: 50px;
-    border-radius: 10%;
-
-}
-.form-floating{
-    width: 700px;
-    height: 800px;
-
-}
 .fila {
     display: flex;
     flex-direction: row;
@@ -110,7 +170,11 @@ img{
     justify-content: space-evenly ;
     margin-bottom: 20px;
 }
+.form-control{
+    width: 700px;
+    height: 300px;
 
+}
 #bloque1{
     width: 300px;
     height: 300px;
@@ -118,7 +182,8 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: orangered;
+    /* background-color: orangered; */
+    background: linear-gradient(110deg, #ff4500 60%, #e6734a 60%);
     font-size: xx-large;
     font-weight: bold;
     color: black;
@@ -130,11 +195,12 @@ img{
 #bloque2{
     width: 300px;
     height: 300px;
-    border: 3px solid black;
+    border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
+    background: linear-gradient(110deg, #d8ab24 60%, #fdcd3b 60%);
     font-size: xx-large;
     font-weight: bold;
     color: black;
@@ -150,7 +216,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
+    background: linear-gradient(110deg, #333028 60%, gray 60%);
     font-size: xx-large;
     font-weight: bold;
     color: black;
@@ -166,7 +232,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: green;
+    background: linear-gradient(110deg, green 60%, rgb(117, 165, 117) 60%);
     font-size: xx-large;
     font-weight: bold;
     color: black;
@@ -182,7 +248,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blue;
+    background: linear-gradient(110deg, blue 60%, rgb(50, 100, 194) 60%);
     font-size: xx-large;
     font-weight: bold;
     color: black;
@@ -198,6 +264,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(110deg, rgb(104, 81, 51) 60%, rgb(133, 104, 67) 60%);
     background-color: rgb(133, 104, 67);
     font-size: xx-large;
     font-weight: bold;
@@ -206,3 +273,190 @@ img{
     padding-left: 80px;
     border-radius: 10%;
 }
+#rotulo{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 80px;
+    color: aliceblue;
+    padding-right: 50px;
+}
+
+/* Parte de las RRSS */
+.wrapper {
+    position: absolute;
+    top: 2800px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+  }
+  
+  .wrapper ul {
+    list-style: none;
+  }
+  .wrapper ul li {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li .fa {
+    color: #D8E2DC;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  /*twitter*/
+  .wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  /* instagram */
+  .wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  /* google */
+  .wrapper ul li:hover.google {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  /* whatsapp */
+  .wrapper ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+  }
+  
+  
+  /* media queries */
+  
+  @media screen and (max-width: 640px){
+    .wrapper {
+        width: 350px;
+    }
+    .wrapper ul li{
+        margin-top: 10px;
+    }
+    .wrapper ul li.google{
+        margin-left: 60px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 340px){
+    .wrapper {
+        width: 150px;
+    }
+    .wrapper ul li{
+        margin:15px;
+    }
+    .wrapper ul li.google{
+        margin-left: 15px;
+    }
+  }
+
+  /* CONTACTO CON COMENTARIOS */
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+  form {
+      margin-top: 100px;
+    margin-left:50px auto;
+    margin-right: 50px auto; 
+}
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  margin-left: 25px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
