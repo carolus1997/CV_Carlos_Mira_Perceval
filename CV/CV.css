@@ -1,12 +1,13 @@
 body {
   width: 90%;
-  margin-left: 3%;
+  height: 110%;
+  margin-left: 3.5%;
   /* background: url(images/fantasy\ world_web_movil.jpg) no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   background: #0A122A no-repeat center center fixed;
+  background: #0A122A no-repeat center center fixed;
 
 }
 
@@ -291,6 +292,7 @@ svg{
     position: relative;
     top: 50px;
     left: 50%;
+    margin-bottom: 10%;
     transform: translate(-50%, -50%);
     width: 550px;
   }
