@@ -75,9 +75,14 @@ body{
 }
 
 /* Parte de las RRSS */
-.wrapper{
+ul{
     display: flex;
     flex-direction: row;
+    align-items:stretch;
+    margin-right: 30%;
+}
+.wrapper{
+    display: flex;
     position: relative;
     top: 55px;
     left: 50%;
