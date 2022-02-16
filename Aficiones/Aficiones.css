@@ -139,7 +139,7 @@ a{
   font-style: normal;
 }
 
-@media screen and (min-width: 640px){
+@media screen and (max-width: 640px){
   .parrafo{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -150,11 +150,11 @@ a{
   }
 
 }
-@media screen and (max-with:400px){
+@media screen and (max-with:1920px){
   .parrafo{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 10px;
+    font-size: 15px;
     font-style: normal;
     text-align: center;
     margin: 2% 5% 0% 5%;
