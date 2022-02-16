@@ -131,6 +131,13 @@ img{
   height: 50%;
   border: white;
 }
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
 
 @media screen and (min-width: 640px){
   .parrafo{
