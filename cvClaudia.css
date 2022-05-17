@@ -1,0 +1,70 @@
+/* AQUI TIENES LAS CLASES. PUEDES PONER LAS CLASES QUE QUIERAS Y CON ELLAS PUEDES CONFIGURAR ESTILOS MÁS GENERALES, SOBRETODO DISTRIBUCIÓN O PROPIEDADES. PUEDES APLICAR VARIAS CLASES A UN ELEMENTO */
+.cabecera {
+    border: 2px;
+    border-radius: 5%;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+}
+
+.pie {}
+
+.seccionPrimera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.seccionSegunda{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.seccionTercera{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+/* AQUI EMPIEZAN LOS IDENTIFICADORES. CON ELLOS PUEDES CONFIGURAR LOS ESTILOS DE CADA COSA POR SEPARADO */
+#nombre {
+    border-style: solid;
+    border-color: black;
+    border-radius: 2%;
+    text-align: center;
+}
+
+#descripcion {
+    width: 30%;
+    border: 1px;
+    border-style: solid;
+    border-color: blue;
+}
+
+#descripcion h3{
+    text-align: center;
+}
+
+#descripcion p{
+    width: 90%;
+    height: auto;
+    text-align: justify;
+}
+
+#formacion {}
+
+#competencias {
+    width: 30%;
+    border: 1px;
+    border-style: solid;
+    border-color: blue;
+}
+
+#experiencia {}
+
+#beneficios h3 {
+    text-align: center;
+}
